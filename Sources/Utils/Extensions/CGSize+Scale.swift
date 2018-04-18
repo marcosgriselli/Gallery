@@ -1,11 +1,11 @@
 //
-//  CGRect+Scale.swift
-//  Gallery
+//  CGSize+Scale.swift
+//  Gallery-iOS
 //
 //  Created by Marcos Griselli on 18/04/2018.
+//  Copyright © 2018 Hyper Interaktiv AS. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 fileprivate func * (left: CGSize, right: CGFloat) -> CGSize {
@@ -13,7 +13,7 @@ fileprivate func * (left: CGSize, right: CGFloat) -> CGSize {
 }
 
 internal extension CGSize {
-
+    
     var scaledToScreen: CGSize {
         return self * UIScreen.main.scale
     }
