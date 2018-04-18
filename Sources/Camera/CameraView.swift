@@ -51,9 +51,7 @@ class CameraView: UIView, UIGestureRecognizerDelegate {
       bottomContainer.addSubview($0)
     }
 
-    [stackView, doneButton].forEach {
-      bottomView.addSubview($0 as! UIView)
-    }
+    [stackView, doneButton].forEach(bottomView.addSubview)
 
     [closeButton, flashButton, rotateButton].forEach {
       $0.g_addShadow()

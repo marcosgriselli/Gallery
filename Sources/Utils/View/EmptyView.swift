@@ -20,9 +20,7 @@ class EmptyView: UIView {
   // MARK: - Setup
 
   private func setup() {
-    [label, imageView].forEach {
-      addSubview($0 as! UIView)
-    }
+    [label, imageView].forEach(addSubview)
 
     label.g_pinCenter()
     imageView.g_pin(on: .centerX)
