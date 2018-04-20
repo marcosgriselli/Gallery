@@ -41,7 +41,7 @@ public class GalleryController: UIViewController, PermissionControllerDelegate {
   }
 
   public override var prefersStatusBarHidden : Bool {
-    return true
+    return false
   }
 
   // MARK: - Child view controller
